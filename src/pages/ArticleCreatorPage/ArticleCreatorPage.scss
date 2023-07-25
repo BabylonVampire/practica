@@ -1,0 +1,28 @@
+.ArticleCreatorPage {
+	background-color: #272727;
+}
+
+.chapters {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	& > * {
+		margin: calc(var(--index));
+	}
+}
+
+.chapter {
+	font-family: gawaa;
+	cursor: pointer;
+	display: flex;
+	font-size: calc(var(--index) * 2.5);
+	color: #fff;
+	height: calc(var(--index) * 10);
+	width: 33%;
+	background-color: #0f2c69;
+	border: solid calc(var(--index) * 0.4) #2f5dbd;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+}
